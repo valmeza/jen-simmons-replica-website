@@ -106,7 +106,8 @@
   }
   .menu li > a {
     text-decoration: none;
-    font-weight: 900;
+    font-size: 2em;
+    /* font-weight: 500; */
     color: var(--primary-color);
   }
   .menu li > a:hover {
@@ -114,6 +115,7 @@
   }
   /* blue box */
   .red-box {
+    display: none;
     border: solid 5px #0000ff;
   }
 }
