@@ -110,7 +110,7 @@
     color: var(--primary-color);
   }
   .menu li > a:hover {
-    color: #cccccc;
+    color: var(--secondary-color);
   }
   /* blue box */
   .red-box {
