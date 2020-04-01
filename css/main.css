@@ -1,103 +1,134 @@
-* {
-  box-sizing: border-box;
-  font-family: Avenir, Helvetica, sans-serif;
-}
-body {
-  background: #757780;
-}
-article {
-  margin: 3rem 10vw 3rem 4vh;
-}
-:root {
-  --firstName-color: #ffffff;
-  --lastName-color: #ffff00;
+/* Small devices (phones and pocket devices, 576 and up) */
+@media screen and (min-width: 576px) {
+  * {
+    box-sizing: border-box;
+    font-family: Avenir, Helvetica, sans-serif;
+  }
+  body {
+    background: #757780;
+  }
+  section {
+    margin-top: 2.5em;
+    font-size: 3em;
+  }
+  article {
+    margin: 3rem 10vw 3rem 4vw;
+  }
+  :root {
+    --primary-color: #ffffff;
+    --secondary-color: #ffff00;
+  }
+
+  h1 {
+    font-size: calc(3em + 1.6vw);
+    text-align: center;
+    display: grid;
+    grid-template-columns: (7, 1fr);
+  }
+  h1 span:nth-child(1) {
+    color: var(--primary-color);
+    grid-column: 1;
+    grid-row: 1;
+  }
+  h1 span:nth-child(2) {
+    color: var(--primary-color);
+    grid-column: 2;
+    grid-row: 2;
+  }
+  h1 span:nth-child(3) {
+    color: var(--primary-color);
+    grid-column: 3;
+    grid-row: 1;
+  }
+  h1 span:nth-child(4) {
+    color: var(--primary-color);
+    grid-column: 4;
+    grid-row: 2;
+  }
+  h1 span:nth-child(5) {
+    color: var(--primary-color);
+    grid-column: 5;
+    grid-row: 1;
+  }
+  h1 span:nth-child(6) {
+    color: var(--primary-color);
+    grid-column: 6;
+    grid-row: 2;
+  }
+  h1 span:nth-child(7) {
+    color: var(--primary-color);
+    grid-column: 7;
+    grid-row: 1;
+  }
+  h1 span:nth-child(8) {
+    color: var(--secondary-color);
+    grid-column: 2;
+    grid-row: 4;
+  }
+  h1 span:nth-child(9) {
+    color: var(--secondary-color);
+    grid-column: 3;
+    grid-row: 5;
+  }
+  h1 span:nth-child(10) {
+    color: var(--secondary-color);
+    grid-column: 4;
+    grid-row: 4;
+  }
+  h1 span:nth-child(11) {
+    color: var(--secondary-color);
+    grid-column: 5;
+    grid-row: 5;
+  }
+  .line {
+    border: 3px solid #ff4500;
+  }
+  nav {
+    background: #ff4500;
+    writing-mode: vertical-rl;
+    height: max-content;
+  }
+  .hello {
+    color: var(--secondary-color);
+  }
+  .secondary,
+  .white {
+    color: white;
+  }
+  p {
+    color: var(--primary-color);
+  }
+  .menu {
+    padding: 1em;
+  }
+  .menu li {
+    list-style: none;
+  }
+  .menu li > a {
+    text-decoration: none;
+    font-weight: 900;
+    color: var(--primary-color);
+  }
+  .menu li > a:hover {
+    color: #cccccc;
+  }
+  /* red orange box */
+  .red-box {
+    border: solid 5px #ff4500;
+  }
 }
 
-h1 {
-  font-size: calc(1.6rem + 1.6vh);
-  text-align: center;
-  display: grid;
-  grid-template-columns: (7, 1fr);
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  /* ... */
 }
-h1 span:nth-child(1) {
-  color: var(--firstName-color);
-  grid-column: 1;
-  grid-row: 1;
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  /* ... */
 }
-h1 span:nth-child(2) {
-  color: var(--firstName-color);
-  grid-column: 2;
-  grid-row: 2;
-}
-h1 span:nth-child(3) {
-  color: var(--firstName-color);
-  grid-column: 3;
-  grid-row: 1;
-}
-h1 span:nth-child(4) {
-  color: var(--firstName-color);
-  grid-column: 4;
-  grid-row: 2;
-}
-h1 span:nth-child(5) {
-  color: var(--firstName-color);
-  grid-column: 5;
-  grid-row: 1;
-}
-h1 span:nth-child(6) {
-  color: var(--firstName-color);
-  grid-column: 6;
-  grid-row: 2;
-}
-h1 span:nth-child(7) {
-  color: var(--firstName-color);
-  grid-column: 7;
-  grid-row: 1;
-}
-h1 span:nth-child(8) {
-  color: var(--lastName-color);
-  grid-column: 2;
-  grid-row: 4;
-}
-h1 span:nth-child(9) {
-  color: var(--lastName-color);
-  grid-column: 3;
-  grid-row: 5;
-}
-h1 span:nth-child(10) {
-  color: var(--lastName-color);
-  grid-column: 4;
-  grid-row: 4;
-}
-h1 span:nth-child(11) {
-  color: var(--lastName-color);
-  grid-column: 5;
-  grid-row: 5;
-}
-nav {
-  writing-mode: vertical-rl;
-  height: max-content;
-  /* background: #ffff00; */
-  background: #ff4500;
-}
-.hello {
-  color: var(--lastName-color);
-}
-.secondary,
-.white {
-  color: white;
-}
-p {
-  color: var(--firstName-color);
-}
-.menu {
-  padding: 1em;
-}
-.menu li {
-  list-style: none;
-}
-.menu li > a {
-  text-decoration: none;
-  font-weight: 900;
-  color: var(--firstName-color);
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  /* ... */
 }
