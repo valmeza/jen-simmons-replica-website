@@ -118,6 +118,13 @@
     display: none;
     border: solid 5px #0000ff;
   }
+  img {
+    margin: 5px;
+    width: 400px;
+    height: 400px;
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
