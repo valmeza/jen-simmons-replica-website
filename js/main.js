@@ -1,27 +1,34 @@
-// "use strict";
-// (function() {
-//     // producing a console.log every second 
-//     var count = 0;
-//     var max = 10;
-//     var interval = 1000; // interval time in milliseconds
+"use strict";
 
-//     var intervalId = setInterval(function () {
-//         if (count >= max) {
-//             clearInterval(intervalId);
-//             console.log("All Done");
-//         } else {
-//             count++;
-//             console.log('Repeating this line ' + count);
-//         }
-//     }, interval);
+(function() {
+  // button event
 
-//     var delay = 5000; // delay time in milliseconds
+  var button1 = document.getElementById("click-me");
+  var button2 = document.getElementById("something");
+  var button3 = document.getElementById("break");
+  var button4 = document.getElementById("ehh");
 
-//     var timeoutId = setTimeout(function () {
-//         alert('Here is a delayed hello!');
-//     }, delay);
+  var name = document.getElementById("name");
+  button1.addEventListener("click", function() {
+    name.style.color = "#0000ff";
+  });
 
-//     // to cancel the timeout, you can call
-//     // clearTimeout(timeoutId);
-//     // prior to the delay expiring
-// })();
+  var picture = document.getElementById("images-1");
+  var secondPicture = document.getElementById("images-2");
+  button2.addEventListener("click", function() {
+    picture.style.borderRadius = "10px";
+    secondPicture.style.borderRadius = "50%";
+  });
+
+  var breakIt = document.getElementById("para");
+  var breakIt2 = document.getElementById("para2");
+
+  button3.addEventListener("click", function() {
+    breakIt.style.transform = "rotate(-25deg)";
+    breakIt2.style.transform = "rotate(25deg)";
+  });
+
+  button4.addEventListener('click', function() {
+    button4.style.display = 'none';
+  });
+})();
