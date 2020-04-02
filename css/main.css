@@ -153,6 +153,7 @@
     display: none;
     border: solid 5px #0000ff;
   }
+  /* images */
   img {
     margin: 5px;
     width: 400px;
@@ -160,6 +161,39 @@
     mix-blend-mode: overlay;
     opacity: 0.5;
   }
+}
+
+/* button decorations */
+.button-1,
+.button-2,
+.button-3,
+.button-4 {
+  background-color: #0000ff;
+  border: none;
+  border-radius: 4px;
+  color: var(--primary-color);
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.button-1:hover{
+  background-color: #ffffff;
+  color: #0000ff;
+}
+.button-2:hover{
+  background-color: #ffffff;
+  color: #0000ff;
+}
+.button-3:hover{
+  background-color: #ffffff;
+  color: #0000ff;
+}
+.button-4:hover{
+  background-color: #ffffff;
+  color: #0000ff;
 }
 
 /* Medium devices (tablets, 768px and up) */
