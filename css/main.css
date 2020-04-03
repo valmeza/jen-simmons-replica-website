@@ -17,8 +17,9 @@
   :root {
     --primary-color: #ffffff;
     --secondary-color: #ffff00;
+    --grey-color: #757780;
   }
-
+  /* name styling starts */
   h1 {
     font-size: calc(3em + 1.6vw);
     text-align: center;
@@ -80,15 +81,21 @@
     grid-column: 7;
     grid-row: 5;
   }
+  /* name styling ends */
 
   .line {
-    border: 3px solid #0000ff;
+    border: 3px solid #ffffff;
   }
+
+  /* nav style */
   nav {
-    background: #0000ff;
+    background: #ffffff;
     writing-mode: vertical-rl;
     height: max-content;
   }
+
+  /* end nav style */
+
   .hello {
     color: var(--secondary-color);
   }
@@ -96,9 +103,12 @@
   .white {
     color: white;
   }
+
+  /* paragraph styling */
   p {
     color: var(--primary-color);
   }
+
   ul {
     padding: 1rem;
   }
@@ -109,7 +119,7 @@
     text-decoration: none;
     font-size: 2em;
     /* font-weight: 500; */
-    color: var(--primary-color);
+    color: var(--grey-color);
   }
   .menu li > a:hover {
     color: var(--secondary-color);
@@ -117,7 +127,7 @@
   /* blue box */
   .red-box {
     display: none;
-    border: solid 5px #0000ff;
+    border: solid 5px #ffffff;
   }
   /* images */
   img {
@@ -134,32 +144,36 @@
 .button-2,
 .button-3,
 .button-4 {
-  background-color: #0000ff;
+  background-color: #ffffff;
   border: none;
   border-radius: 4px;
-  color: var(--primary-color);
+  color: #757780;
   padding: 15px 32px;
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
   cursor: pointer;
 }
-.button-1:hover{
-  background-color: #ffffff;
-  color: #0000ff;
+.button-1:hover {
+  border: 2px solid #ffffff;
+  background-color: #757780;
+  color: #ffffff;
 }
-.button-2:hover{
-  background-color: #ffffff;
-  color: #0000ff;
+.button-2:hover {
+  border: 2px solid #ffffff;
+  background-color: #757780;
+  color: #ffffff;
 }
-.button-3:hover{
-  background-color: #ffffff;
-  color: #0000ff;
+.button-3:hover {
+  border: 2px solid #ffffff;
+  background-color: #757780;
+  color: #ffffff;
 }
-.button-4:hover{
-  background-color: #ffffff;
-  color: #0000ff;
+.button-4:hover {
+  border: 2px solid #ffffff;
+  background-color: #757780;
+  color: #ffffff;
 }
 
 /* Medium devices (tablets, 768px and up) */
